@@ -1,0 +1,44 @@
+// Font families
+$main-font-family: 'futura', serif;
+$title-font-family: 'Futura', cursive;
+$body-font-family: $main-font-family;
+
+
+
+// Font sizes
+$font-size-base: 15px;
+$font-size-small: $font-size-base - 3px;
+$font-size-large: $font-size-base + 5px;
+$font-size-h1: $font-size-base + 15px;
+$font-size-h2: $font-size-base + 12px;
+$font-size-h3: $font-size-base + 9px;
+$font-size-h4: $font-size-base + 6px;
+$font-size-h5: $font-size-base + 3px;
+$font-size-h6: $font-size-base;
+
+
+// Base colors
+$color-amazing-39: 	white	;
+$color-grastur: 	#db1414;
+$color-sidonia-orange:	#205a8f;
+$color-less-is-less: white;
+$color-silver: #eefbff;
+
+// Main components colors
+$main-text-color: $color-grastur;
+$links-color: $color-amazing-39;
+
+// Responsive
+// 667 iphone landscape. 768 ipad portrait
+$mobile-portrait-width: 414px;
+$mobile-landscape-width: 767px;
+$tablet-portrait-width: $mobile-landscape-width + 1;
+$tablet-landscape-width: 1024px;
+
+// Forms variables
+$form-input-border-color: $color-grastur;
+$form-input-outline-color: $color-grastur;
+$form-button-background-color: $color-grastur;
+$form-button-font-color: $color-less-is-less;
+$form-error-background-color: $color-amazing-39;
+$form-error-font-color: $color-less-is-less;

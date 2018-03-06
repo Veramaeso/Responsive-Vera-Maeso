@@ -1,0 +1,128 @@
+.songs-list {
+    margin-top: 0;
+
+    .ui-status {
+        display: none;
+    }
+
+    &.empty {
+      .ui-status.empty {
+          display: block;
+        
+        }  
+    }
+    &.error {
+        .ui-status.error {
+            display: block;
+          
+        }  
+    }
+
+    &.ideal {
+        .ui-status.ideal {
+            display: block;
+          
+        }  
+    }
+
+    &.loading {
+        .ui-status.loading {
+            display: block;
+          
+        }  
+    }
+
+    &.empty, &.error, &.loading {
+        font-size: $font-size-large;
+        text-align: center;
+        padding: 50px;
+        
+    }
+
+
+    .obra {
+        box-sizing: border-box;
+        
+        float: left;
+        padding: 10px; 
+        margin-top: 7px;
+        background: $color-silver;
+        overflow: hidden;
+
+        
+        .dibujo {
+            width: 100%;
+
+            &:hover{
+                background-size: 110%;
+            }
+        }
+
+        .title {
+            font-weight: bold;
+            margin-top:10px;
+            text-align: center;
+            
+        }
+        .tecnica {
+            font-weight: normal;
+            margin-top:2px;
+            text-align: center;
+            
+        }
+
+
+        .like {
+            
+            border-radius: 4px;
+            padding: 8px;
+            width: 16px; 
+            float: right; 
+
+            &:hover {
+                background-size: 15% 15%;
+            }
+        }
+        .dislike {
+            
+            border-radius: 4px;
+            padding: 8px;
+            width: 16px;  
+        }
+        
+        @include if-mobile-landscape {
+            width:calc(29% - 36px);
+            height: 220px;
+            max-height: 220px;
+            margin-left: 8px;
+
+        }
+
+        @include if-mobile {
+            width:calc(31% - 2px);
+            height: 210px;
+            max-height: 210px;
+            margin-left: 8px;
+        }
+
+        @include if-desktop {
+            width: calc(20% - 10px);
+        }
+
+        @include if-tablet-landscape {
+            height: 220px;
+            max-height: 220px;
+            width: calc(20% - 9px);
+            
+            
+        }
+
+        @include if-tablet {
+            height: 260px;
+            max-height: 260px;
+            margin-block-start: 50px;
+            margin-left: 4px;
+        }
+        
+    }
+}

@@ -1,0 +1,220 @@
+.bloque {
+    display:flex;
+    flex-direction: column;
+
+
+    .detalle-container {
+        display: flex;
+        flex-direction: column;
+
+        @include if-desktop {
+            flex-direction: row;
+
+        }
+    }
+
+    .album-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+       
+
+        @include if-mobile-landscape {
+            flex-direction: row;
+            
+        }
+        @include if-mobile {
+            flex-direction: row;
+        
+        }
+
+        @include if-tablet-landscape {
+            flex-direction: row;
+
+        }
+        @include if-tablet {
+            flex-direction: row;
+        }
+
+        @include if-desktop {
+            flex-direction: column;
+            height: 700px;
+
+        }
+
+        &.uno{
+            background-color: transparentize($color-sidonia-orange, 0.7);
+            
+            @include if-desktop {
+                flex: 10;
+                
+    
+            }
+
+            
+        }
+
+        .img-detalle {
+            max-width: 95%;
+            height: 200px;
+            min-width: 200px;
+
+            @include if-mobile-landscape {
+                max-width: 10%;
+                height: 250px;
+                min-width: 250px;
+
+            }
+
+            @include if-mobile {
+                display: none;
+                
+
+            }
+            @include if-tablet-landscape {
+                max-width: 100%;
+                height: 500px;
+                min-width: 50px;
+
+            }
+
+            @include if-desktop {
+                max-width: 95%;
+                height: 300px;
+                min-width: 300px;
+
+            }
+        }
+
+        .informacion {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 90px;
+
+            @include if-mobile-landscape {
+               width: 40%;
+               margin-left: 10px;
+  
+            }
+            @include if-mobile {
+                width: 80%;
+                
+                .texto {
+                    font-size: $font-size-base;
+                    padding-bottom: 10px;
+                    margin-block-start: 2px;
+                    line-height: 1.5em;
+                    margin-left: 1px;
+                    
+    
+                }
+   
+             }
+
+            @include if-tablet-landscape {
+                width: 40%;
+                margin-left: 10px;
+                .nombre {
+                    font-family: $title-font-family;
+                    font-size: $font-size-h3;
+                    padding-bottom: 30px;
+                    text-align: center;
+                    font-style: bold;
+                }
+    
+                .favorito {
+                    font-size: $font-size-h5;
+                    color: $color-amazing-39;
+                    font-style: italic;
+    
+                }
+    
+                .texto {
+                    font-size: $font-size-base;
+                    padding-bottom: 10px;
+                    margin-block-start: 2px;
+                    line-height: 1.5em;
+                    margin-left: 1px;
+    
+                }
+    
+                .negrita{
+                    font-weight: bold;
+                }
+                .cursiva {
+                    font-style: italic;
+                }
+                .tecnica {
+                    font-size: $font-size-base;
+                    padding-bottom: 10px;
+                    margin-block-start: 2px;
+                    line-height: 1.5em;
+                    margin-left: 1px;
+    
+                }
+                .referencia {
+                   font-weight: bold;
+                }
+   
+             }
+
+            @include if-tablet{
+                width: 40%;
+                margin-left: 10px;
+                
+   
+             }
+
+            @include if-desktop {
+                width: 80%;
+                
+             }
+
+            .nombre {
+                font-family: $title-font-family;
+                font-size: $font-size-h3;
+                padding-bottom: 50px;
+                text-align: center;
+                font-style: bold;
+            }
+
+            .favorito {
+                font-size: $font-size-h5;
+                color: $color-amazing-39;
+                font-style: italic;
+
+            }
+
+            .texto {
+                font-size: $font-size-base;
+                
+                margin-block-start: 2px;
+                line-height: 1.5em;
+                margin-left: 1px;
+
+            }
+
+            .negrita{
+                font-weight: bold;
+            }
+            .cursiva {
+                font-style: italic;
+            }
+            .tecnica {
+                font-size: $font-size-base;
+                padding-bottom: 40px;
+                margin-block-start: 2px;
+                line-height: 1.5em;
+                margin-left: 1px;
+
+            }
+            .referencia {
+               font-weight: bold;
+            }
+
+        }
+    }
+
+}

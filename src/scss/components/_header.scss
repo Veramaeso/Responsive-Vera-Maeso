@@ -1,0 +1,85 @@
+.web-header{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 4px 8px 4px 0;
+    box-sizing: border-box;
+    background: fade-out($color-grastur, 0.15%);
+    color: $color-silver;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+    transition: background 0.2s;
+
+    &:hover {
+        background: $color-grastur;
+    }
+
+    .web-title{
+        display: inline-flex;
+        font-size: $font-size-large;
+        font-weight: bold;
+        text-transform: uppercase;
+        width: 35%;
+        text-align: center;
+    }
+
+    .form-search {
+        display: inline-flex;
+        align-items: center;
+        .busquedas {
+            width: 150px;
+            margin-left: 15px;
+            margin-top: 10px;
+            padding: 5px;
+            background-color: $color-silver;
+
+        }
+
+
+    }
+
+    a {
+        text-decoration: none;
+        color: $color-silver;
+        
+        
+        @include if-mobile-landscape {
+            text-decoration: none;
+            color: $color-silver;
+            padding-right: 80px; 
+            
+        }
+        @include if-mobile {
+            text-decoration: none;
+            color: $color-silver;
+            padding-right: 80px; 
+        
+        }
+
+        @include if-tablet-landscape {
+            text-decoration: none;
+            display: inline-flex;
+            color: $color-silver;
+            float: left;
+
+        }
+        @include if-tablet {
+            text-decoration: none;
+            color: $color-silver;
+            padding-right: 150px; 
+        }
+
+        @include if-desktop {
+            text-decoration: none;
+            color: $color-silver;
+            padding-left: 800px; 
+
+        }
+        
+    }
+
+
+}

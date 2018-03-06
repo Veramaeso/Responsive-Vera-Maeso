@@ -1,0 +1,28 @@
+.web-footer{
+    box-sizing: border-box;
+    background: fade-out($color-grastur, 0.15%);
+    padding: 15px;
+    color: $color-silver;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    transition: background 0.2s;
+
+    &:hover {
+        background: $color-grastur;
+    }
+
+    .web.tittle{
+        font-size: $font-size-large;
+        font-weight: bold;
+        text-transform: uppercase;
+
+    }
+
+    a {
+        text-decoration: none;
+        color: $color-silver;
+        padding-right: 15px;
+    }
+}

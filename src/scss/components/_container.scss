@@ -1,0 +1,12 @@
+
+.container {
+    
+    background-position: center;
+
+    @include if-desktop {
+        margin: 0 auto;
+        width: 1024px ;
+
+    }
+    
+}
